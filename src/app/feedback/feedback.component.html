@@ -1,0 +1,61 @@
+<div style="align-items: center;text-align: center;">
+<h1>Feedback/Complaint</h1></div>
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your details</ng-template>
+      <form class="example-form" style="width:700px">
+        <h2>Name</h2>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Your Name" value="Tejaswini">
+        </mat-form-field>
+        <h2>Gender</h2>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Gender">
+        </mat-form-field><br>
+        <h2>State</h2>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter State">
+        </mat-form-field><br>
+       
+      </form>
+      
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill your Complaint Detail</ng-template>
+      <h2>Complaint type</h2>
+        <mat-form-field class="example-full-width">
+            <mat-label>Complaint Type</mat-label>
+            <mat-select>
+              <mat-option value="Stadium cleanliness" >Stadium cleanliness</mat-option>
+              <mat-option value="Stadium Authorities">Stadium authorities</mat-option>
+              <mat-option value="Ticket Booking">about ticket booking</mat-option>
+            </mat-select>
+        </mat-form-field><br>
+       
+      <mat-form-field>
+        <textarea matInput placeholder="Complaint detail" formControlName="secondCtrl" required></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

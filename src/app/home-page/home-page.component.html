@@ -1,0 +1,63 @@
+<mat-toolbar class="Mainnav">
+    <img src="https://th.bing.com/th/id/R.e08b4ce0e6fdf91b13a312124858114f?rik=7AE8UnsaitVYJA&riu=http%3a%2f%2fstatic.dnaindia.com%2fsites%2fdefault%2ffiles%2fstyles%2ffull%2fpublic%2f2015%2f12%2f15%2f405042-ipl.jpg&ehk=Eu4WIh%2bQ57JnXwnAQizjNiS6mGk0Ksr0vtH17ctep7w%3d&risl=&pid=ImgRaw&r=0" width="90px" height="50px">
+  <h1>&nbsp;&nbsp;Indian Primere League</h1>
+  </mat-toolbar>
+  <mat-toolbar class="subnav">
+  <button mat-button [matMenuTriggerFor]="aboveMenu" >Teams</button>
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button mat-menu-item routerLink="/CSK">Chennai Super Kings</button>
+    <button mat-menu-item  routerLink="/mi">Mumbai Indians</button>
+    <button mat-menu-item>Lucknow Super Giants</button>
+    <button mat-menu-item>Gujarat Titans</button>
+    <button mat-menu-item>Sunrisers Hyderabad</button>
+    <button mat-menu-item>Royal Changellers Bengaluru</button>
+    <button mat-menu-item>Rajasthan Royals</button>
+    <button mat-menu-item>Punjab Kings</button>
+    <button mat-menu-item>Kolkata Knight Riders</button>
+    <button mat-menu-item>Delhi Capitals</button>
+  </mat-menu>
+  
+  <button mat-button (click)="openDialog()">History</button>
+  
+  
+  <button mat-button>News</button>
+  
+  
+  <button mat-button routerLink="feedback" >Feedback</button>
+  
+  </mat-toolbar>
+  <div style="padding:30px">
+  <mat-card>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>
+        <p>
+  
+          The Indian Premier League (IPL) is a domestic, annual Twenty20 cricket tournament in India, organized by the IPL Governing Council, under the aegis of the Board of Control for Cricket in India (BCCI). It is the most watched Twenty20 tournament and the second-best-paying sporting league globally.
+  
+  IPL was established in 2008 and currently consists of ten teams in ten cities across India. The inaugural IPL season was won by Rajasthan Royals. As of May 2022, there have been fifteen seasons of the IPL tournament.
+        </p>
+      </mat-grid-tile>
+      <mat-grid-tile style="border-radius: 30px;">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.UBnkgr1sKWWl39-I7yEVWwHaE8?rs=1&pid=ImgDetMain" >
+      </mat-grid-tile>
+    </mat-grid-list>
+    <h1 style="font-size: 30px;font-weight: bold;padding: 20px;text-align: center;text-decoration: underline;">Current Champions</h1>
+  <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile style="border-radius: 30px;">
+        <img src="https://data1.ibtimes.co.in/en/full/634442/ipl-ipl-2017-ipl-auction-indian-premier-league-ipl-most-expensive-buys-ipl-2017-auction.jpg?h=450&l=50&t=40" 
+        >
+      </mat-grid-tile>
+      
+      <mat-grid-tile>
+        <p>
+          <span style="color:orangered;font-size: 30px;font-weight: bold;text-align: justify;">2016 - SunRisers Hyderabad </span><br><br>
+          Sunrisers Hyderabad are a professional franchise cricket team based in Hyderabad, Telangana, India, that plays in the Indian Premier League. 
+          The franchise is owned by Kavya Maran of the SUN Group</p>
+      </mat-grid-tile>
+    </mat-grid-list>
+    
+  </mat-card>
+  </div>
+  <mat-toolbar>
+    <h1 style="padding-left: 500px;">Copyright  © BCCI - 2023. All rights reserved.</h1>
+  </mat-toolbar>

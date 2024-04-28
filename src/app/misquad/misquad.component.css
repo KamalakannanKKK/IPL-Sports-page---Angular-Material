@@ -1,0 +1,33 @@
+mat-toolbar h1{
+    float:left;
+    color:rgb(27, 27, 116);
+    font-weight: bold;
+    font-size: large;
+  }
+  .Mainnav{
+    background-image: linear-gradient(to right,rgb(141, 235, 141),rgb(161, 161, 230),pink,rgb(252, 126, 126));
+  }
+  mat-sidenav-container{
+    height: 40rem;
+    background-color: rgb(246, 250, 250);
+}
+mat-sidenav, mat-sidenav-content{
+    padding:16px
+}
+mat-sidenav{
+    background-color: rgb(252, 253, 253);
+    width:200px;
+}
+span{
+    font-weight: bold;
+   
+    display: inline-block;
+}
+.example-header-image {
+    background-image: url('https://data1.ibtimes.co.in/en/full/687248/hardik-pandya.jpg?h=450&l=50&t=40');
+    background-size: cover;
+  }
+  .example-card {
+    max-width: 300px;
+  }
+ 

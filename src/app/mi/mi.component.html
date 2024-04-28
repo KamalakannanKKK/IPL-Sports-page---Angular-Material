@@ -1,0 +1,68 @@
+<mat-toolbar class="Mainnav">
+    <img style="border-radius: 20px;" src="https://th.bing.com/th/id/R.e08b4ce0e6fdf91b13a312124858114f?rik=7AE8UnsaitVYJA&riu=http%3a%2f%2fstatic.dnaindia.com%2fsites%2fdefault%2ffiles%2fstyles%2ffull%2fpublic%2f2015%2f12%2f15%2f405042-ipl.jpg&ehk=Eu4WIh%2bQ57JnXwnAQizjNiS6mGk0Ksr0vtH17ctep7w%3d&risl=&pid=ImgRaw&r=0" width="90px" height="50px">
+  <h1 style="padding-right: 900px;">&nbsp;&nbsp;Indian Primere League</h1>
+  <button mat-raised-button  routerLink="/"style="float:right;">Back</button>
+  </mat-toolbar>
+  
+<mat-sidenav-container>
+    <!-- mode=push push main content to side -->
+    <!-- mode=side  fixed move main content -->
+    <mat-sidenav  mode="push" [(opened)]="opened">
+        <h1 class="mat-display-4"><span>Mumbai Indians</span></h1>
+        <mat-list>
+            <mat-list-item >DashBoard</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLink="/misquad">Squad</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Fixtures</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Membership</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Paltan Paly</mat-list-item>
+          </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+        <button (click)="opened=!opened">   
+            <mat-button-toggle value="left">
+            <mat-icon>format_align_left
+            </mat-icon>
+          </mat-button-toggle>
+        </button><span>Dashboard</span></mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <table mat-table
+       [dataSource]="dataSource" multiTemplateDataRows
+       class="mat-elevation-z8">
+  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+    <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+    <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+  </ng-container>
+
+  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+      <div class="example-element-detail"
+           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+        <div class="example-element-diagram">
+          <div class="example-element-position"> {{element.position}} </div>
+          <div class="example-element-symbol"> {{element.symbol}} </div>
+          <div class="example-element-name"> {{element.name}} </div>
+          <div class="example-element-weight"> {{element.weight}} </div>
+        </div>
+        <div class="example-element-description">
+          {{element.description}}
+          <span class="example-element-description-attribution"> -- Wikipedia </span>
+        </div>
+      </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+      class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element">
+  </tr>
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+</table>

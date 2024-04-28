@@ -1,0 +1,238 @@
+<mat-toolbar class="Mainnav">
+    <img style="border-radius: 20px;" src="https://th.bing.com/th/id/R.e08b4ce0e6fdf91b13a312124858114f?rik=7AE8UnsaitVYJA&riu=http%3a%2f%2fstatic.dnaindia.com%2fsites%2fdefault%2ffiles%2fstyles%2ffull%2fpublic%2f2015%2f12%2f15%2f405042-ipl.jpg&ehk=Eu4WIh%2bQ57JnXwnAQizjNiS6mGk0Ksr0vtH17ctep7w%3d&risl=&pid=ImgRaw&r=0" width="90px" height="50px">
+  <h1 style="padding-right: 900px;">&nbsp;&nbsp;Indian Primere League</h1>
+  <button mat-raised-button  routerLink="/"style="float:right;">Back</button>
+  </mat-toolbar>
+  
+<mat-sidenav-container>
+    <!-- mode=push push main content to side -->
+    <!-- mode=side  fixed move main content -->
+    <mat-sidenav  mode="push" [(opened)]="opened">
+        <h1 class="mat-display-4"><span>Mumbai Indians</span></h1>
+        <mat-list>
+            <mat-list-item routerLink="/mi">DashBoard</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLink="/misquad">Squad</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Fixtures</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Membership</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Paltan Paly</mat-list-item>
+          </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class="subnav">
+        <button (click)="opened=!opened">   
+            <mat-button-toggle value="left">
+            <mat-icon>format_align_left
+            </mat-icon>
+          </mat-button-toggle>
+        </button><span>Squad</span></mat-toolbar><br>
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+            <mat-card-title>
+              Rohit Sharma
+            </mat-card-title>
+            <mat-card-subtitle>
+              Right-Hand Batsman (Captain) 
+            </mat-card-subtitle>
+        </mat-card-header></mat-card><br><div style="display: flex;">
+        <mat-card class="example-card" style="flex: 1 1 auto;">
+            <mat-card-header>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.6L5IBeRV1y1mzbpA4lRSBAHaFj?rs=1&pid=ImgDetMain" mat-card-avatar>
+            <mat-card-title>
+             Hardik Pandya
+            </mat-card-title>
+            <mat-card-subtitle>
+              All-rounder (Vice-Captain) 
+            </mat-card-subtitle>
+            </mat-card-header></mat-card>
+            &nbsp;&nbsp;
+            <mat-card class="example-card"style="flex: 1 1 auto;">
+                <mat-card-header>
+                    <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                <mat-card-title>
+                  Rohit Sharma
+                </mat-card-title>
+                <mat-card-subtitle>
+                  Right-Hand Batsman (Captain) 
+                </mat-card-subtitle>
+                </mat-card-header></mat-card>
+                &nbsp;&nbsp;
+                <mat-card class="example-card"style="flex: 1 1 auto;">
+                    <mat-card-header>
+                        <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                    <mat-card-title>
+                      Rohit Sharma
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                      Right-Hand Batsman (Captain) 
+                    </mat-card-subtitle>
+                    </mat-card-header></mat-card>
+                    &nbsp;&nbsp;
+                    <mat-card class="example-card"style="flex: 1 1 auto;">
+                        <mat-card-header>
+                            <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                        <mat-card-title>
+                          Rohit Sharma
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                          Right-Hand Batsman (Captain) 
+                        </mat-card-subtitle>
+                        </mat-card-header></mat-card></div>
+                        &nbsp;&nbsp;<div style="display: flex;">
+                        <mat-card class="example-card"style="flex: 1 1 auto;">
+                            <mat-card-header>
+                                <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                            <mat-card-title>
+                              Rohit Sharma
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                              Right-Hand Batsman (Captain) 
+                            </mat-card-subtitle>
+                            </mat-card-header></mat-card>
+                             &nbsp;&nbsp;
+            <mat-card class="example-card"style="flex: 1 1 auto;">
+                <mat-card-header>
+                    <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                <mat-card-title>
+                  Rohit Sharma
+                </mat-card-title>
+                <mat-card-subtitle>
+                  Right-Hand Batsman (Captain) 
+                </mat-card-subtitle>
+                </mat-card-header></mat-card>
+                &nbsp;&nbsp;
+                <mat-card class="example-card"style="flex: 1 1 auto;">
+                    <mat-card-header>
+                        <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                    <mat-card-title>
+                      Rohit Sharma
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                      Right-Hand Batsman (Captain) 
+                    </mat-card-subtitle>
+                    </mat-card-header></mat-card>
+                    &nbsp;&nbsp;
+                    <mat-card class="example-card"style="flex: 1 1 auto;">
+                        <mat-card-header>
+                            <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                        <mat-card-title>
+                          Rohit Sharma
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                          Right-Hand Batsman (Captain) 
+                        </mat-card-subtitle>
+                        </mat-card-header></mat-card>
+                        
+            
+            
+            
+            
+            
+            
+            </div>
+            <br><div style="display: flex;">
+                <mat-card class="example-card" style="flex: 1 1 auto;">
+                    <mat-card-header>
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.6L5IBeRV1y1mzbpA4lRSBAHaFj?rs=1&pid=ImgDetMain" mat-card-avatar>
+                    <mat-card-title>
+                     Hardik Pandya
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                      All-rounder (Vice-Captain) 
+                    </mat-card-subtitle>
+                    </mat-card-header></mat-card>
+                    &nbsp;&nbsp;
+                    <mat-card class="example-card"style="flex: 1 1 auto;">
+                        <mat-card-header>
+                            <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                        <mat-card-title>
+                          Rohit Sharma
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                          Right-Hand Batsman (Captain) 
+                        </mat-card-subtitle>
+                        </mat-card-header></mat-card>
+                        &nbsp;&nbsp;
+                        <mat-card class="example-card"style="flex: 1 1 auto;">
+                            <mat-card-header>
+                                <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                            <mat-card-title>
+                              Rohit Sharma
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                              Right-Hand Batsman (Captain) 
+                            </mat-card-subtitle>
+                            </mat-card-header></mat-card>
+                            &nbsp;&nbsp;
+                            <mat-card class="example-card"style="flex: 1 1 auto;">
+                                <mat-card-header>
+                                    <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                                <mat-card-title>
+                                  Rohit Sharma
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                  Right-Hand Batsman (Captain) 
+                                </mat-card-subtitle>
+                                </mat-card-header></mat-card></div>
+                                &nbsp;&nbsp;<div style="display: flex;">
+                                <mat-card class="example-card"style="flex: 1 1 auto;">
+                                    <mat-card-header>
+                                        <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                                    <mat-card-title>
+                                      Rohit Sharma
+                                    </mat-card-title>
+                                    <mat-card-subtitle>
+                                      Right-Hand Batsman (Captain) 
+                                    </mat-card-subtitle>
+                                    </mat-card-header></mat-card>
+                                     &nbsp;&nbsp;
+                    <mat-card class="example-card"style="flex: 1 1 auto;">
+                        <mat-card-header>
+                            <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                        <mat-card-title>
+                          Rohit Sharma
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                          Right-Hand Batsman (Captain) 
+                        </mat-card-subtitle>
+                        </mat-card-header></mat-card>
+                        &nbsp;&nbsp;
+                        <mat-card class="example-card"style="flex: 1 1 auto;">
+                            <mat-card-header>
+                                <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                            <mat-card-title>
+                              Rohit Sharma
+                            </mat-card-title>
+                            <mat-card-subtitle>
+                              Right-Hand Batsman (Captain) 
+                            </mat-card-subtitle>
+                            </mat-card-header></mat-card>
+                            &nbsp;&nbsp;
+                            <mat-card class="example-card"style="flex: 1 1 auto;">
+                                <mat-card-header>
+                                    <img src="https://th.bing.com/th/id/R.28e68c0eb27f521f36654bffda6e6308?rik=Fad3u4Es9Yv6iA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wR754Y2u-JY%2fU1kycMqsUfI%2fAAAAAAAAEq8%2ffT2YN6rD238%2fs1600%2f145572.jpg&ehk=ApKXtipGtRzL4o%2bcjclHl1d2q2RBydpWC6LR8LWOnUI%3d&risl=&pid=ImgRaw&r=0" mat-card-avatar>
+                                <mat-card-title>
+                                  Rohit Sharma
+                                </mat-card-title>
+                                <mat-card-subtitle>
+                                  Right-Hand Batsman (Captain) 
+                                </mat-card-subtitle>
+                                </mat-card-header></mat-card>
+                                
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+    </mat-sidenav-content>
+   
+  </mat-sidenav-container>
+
+

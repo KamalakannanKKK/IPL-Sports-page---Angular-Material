@@ -1,0 +1,19 @@
+mat-toolbar h1{
+    float:left;
+    color:rgb(27, 27, 116);
+    font-weight: bold;
+    font-size: large;
+  }
+  .Mainnav{
+    background-image: linear-gradient(to right,rgb(141, 235, 141),rgb(161, 161, 230),pink,rgb(252, 126, 126));
+  }
+  h1{
+    font-size:30px;
+    font-weight: bold;
+    color:rgb(226, 214, 43);
+    text-wrap:pretty;
+  }
+  button{
+    display:inline-block;
+    margin: 0 auto;
+  }

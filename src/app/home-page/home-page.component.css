@@ -1,0 +1,37 @@
+mat-toolbar h1{
+    float:left;
+    color:rgb(27, 27, 116);
+    font-weight: bold;
+    font-size: large;
+  }
+  .Mainnav{
+    background-image: linear-gradient(to right,rgb(141, 235, 141),rgb(161, 161, 230),pink,rgb(252, 126, 126));
+  }
+  mat-card{
+    padding: 40px;
+    border-radius: 30px;
+    border:3px solid black;
+    background-image: radial-gradient(rgb(236, 227, 173),rgb(209, 243, 247),rgb(236,227,173));
+  }
+  
+  p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    align-items: center;
+    padding:20px;
+    text-indent: 50PX;;
+  }
+  mat-toolbar img{
+    border-radius: 20px;;
+  }
+  mat-grid-tile img{
+    border-radius: 30px;
+  }
+  .border{
+    border:3px solid black;
+    border-radius: 30px;
+  }
+  .subnav{
+    background-color: aliceblue;
+  }
+  
